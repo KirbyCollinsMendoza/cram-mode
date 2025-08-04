@@ -755,7 +755,6 @@ class OCRActivity : AppCompatActivity() {
 
                     val raw = response.body()?.generations?.firstOrNull()?.text ?: ""
                     val questions = QuizUtils.parseQuizQuestions(raw).shuffled()
-
                     if (questions.isNotEmpty()) {
                         Toast.makeText(
                             this@OCRActivity,
